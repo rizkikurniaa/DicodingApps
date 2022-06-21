@@ -13,6 +13,9 @@
 		F190DF482862224100F24C9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F190DF462862224100F24C9C /* Main.storyboard */; };
 		F190DF4A2862224500F24C9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F190DF492862224500F24C9C /* Assets.xcassets */; };
 		F190DF4D2862224500F24C9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F190DF4B2862224500F24C9C /* LaunchScreen.storyboard */; };
+		F190DF552862230200F24C9C /* AcademyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190DF542862230200F24C9C /* AcademyModel.swift */; };
+		F190DF582862252E00F24C9C /* AcademyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F190DF562862252E00F24C9C /* AcademyTableViewCell.swift */; };
+		F190DF592862252E00F24C9C /* AcademyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F190DF572862252E00F24C9C /* AcademyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F190DF492862224500F24C9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F190DF4C2862224500F24C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F190DF4E2862224500F24C9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F190DF542862230200F24C9C /* AcademyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyModel.swift; sourceTree = "<group>"; };
+		F190DF562862252E00F24C9C /* AcademyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyTableViewCell.swift; sourceTree = "<group>"; };
+		F190DF572862252E00F24C9C /* AcademyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcademyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				F190DF492862224500F24C9C /* Assets.xcassets */,
 				F190DF4B2862224500F24C9C /* LaunchScreen.storyboard */,
 				F190DF4E2862224500F24C9C /* Info.plist */,
+				F190DF542862230200F24C9C /* AcademyModel.swift */,
+				F190DF562862252E00F24C9C /* AcademyTableViewCell.swift */,
+				F190DF572862252E00F24C9C /* AcademyTableViewCell.xib */,
 			);
 			path = DicodingApps;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F190DF592862252E00F24C9C /* AcademyTableViewCell.xib in Resources */,
 				F190DF4D2862224500F24C9C /* LaunchScreen.storyboard in Resources */,
 				F190DF4A2862224500F24C9C /* Assets.xcassets in Resources */,
 				F190DF482862224100F24C9C /* Main.storyboard in Resources */,
@@ -140,7 +150,9 @@
 			files = (
 				F190DF452862224100F24C9C /* ViewController.swift in Sources */,
 				F190DF412862224100F24C9C /* AppDelegate.swift in Sources */,
+				F190DF552862230200F24C9C /* AcademyModel.swift in Sources */,
 				F190DF432862224100F24C9C /* SceneDelegate.swift in Sources */,
+				F190DF582862252E00F24C9C /* AcademyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
