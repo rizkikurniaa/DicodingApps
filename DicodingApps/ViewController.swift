@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
         // MARK: Untuk menyediakan data ke TableView.
         academyTableView.dataSource = self
+        academyTableView.delegate = self
         
         // MARK: Mendaftarkan XIB ke ViewController.
         academyTableView.register(
@@ -59,6 +60,19 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell() // Mengembalikan UITableViewCell jika tidak ditemukan.
         }
     }
-    
  
+}
+
+// MARK: Mengimplementasikan UITableViewDelegate ke dalam ViewController.
+extension ViewController: UITableViewDelegate {
+ 
+  // MARK: Merespons ketika Table View Cell ditekan.
+  func tableView(
+    _ tableView: UITableView,
+    didSelectRowAt indexPath: IndexPath
+  ) {
+ 
+    // MARK: Menambahkan trigger untuk segue ketika Table View Cell ditekan.
+    performSegue(withIdentifier: "moveToDetail", sender: nil)
+  }
 }
