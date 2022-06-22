@@ -13,9 +13,16 @@ class DetailViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var descLabel: UILabel!
     
+    var academy: AcademyModel? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let result = academy {
+              nameLabel.text = result.name
+              descLabel.text = result.description
+              academyImage.image = result.image
+            }
        
     }
 

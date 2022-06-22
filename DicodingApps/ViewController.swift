@@ -73,6 +73,17 @@ extension ViewController: UITableViewDelegate {
   ) {
  
     // MARK: Menambahkan trigger untuk segue ketika Table View Cell ditekan.
-    performSegue(withIdentifier: "moveToDetail", sender: nil)
+    performSegue(withIdentifier: "moveToDetail", sender: dummyAcademyData[indexPath.row])
   }
+    
+    override func prepare(
+       for segue: UIStoryboardSegue,
+       sender: Any?
+     ) {
+       if segue.identifier == "moveToDetail" {
+         if let detaiViewController = segue.destination as? DetailViewController {
+           detaiViewController.academy = sender as? AcademyModel
+         }
+       }
+     }
 }
